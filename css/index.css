@@ -1,0 +1,570 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@300;400&family=Lora:wght@400;600&family=Nunito+Sans:wght@300&family=Questrial&display=swap');
+
+body {
+    margin: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+}
+
+.logo {
+    position: absolute;
+    width: 7vw;
+    top: 1vw;
+    left: 2%;
+    z-index: 5;
+    transition: left 2s ease;
+    z-index: 12;
+    cursor: pointer;
+}
+
+.logoleft {
+    left: 7%;
+    
+}
+
+.bg {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+}
+
+.header {
+    position: absolute;
+    width: 100%;
+    height: 9vh;
+    z-index: 12;
+}
+
+.line1 {
+    position: absolute;
+    top: 9vh;
+    width: 70%;
+    background-color: white;
+    height: 0.01vw;
+    left: 2.5%;
+    z-index: 0;
+}
+
+.line2 {
+    position: absolute;
+    top: 9vh;
+    width: 73%;
+    background-color: #D6353A;
+    height: 0.03vw;
+    left: 1.5%;
+    z-index: 7;
+}
+
+.menu{
+    width: 75%;
+    height: 9vh;
+    padding-top: 2vh;
+    font-size: 1.7vw;
+    font-family: 'Nunito Sans', sans-serif;
+	list-style: none;
+	position: absolute;
+    display: inline-block;
+    text-decoration: none;
+    margin-top:0;
+    padding-left: 16%;
+}
+
+.zapis, .uslugi, .otzivi {
+    font-size: 1.7vw;
+    font-family: 'Nunito Sans', sans-serif;
+    text-decoration: none;
+    color: white;
+    background-color: none;
+    outline: none; /* Для синий ободки */
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.zapis:hover, .uslugi:hover, .otzivi:hover {
+    color: gray;
+}
+
+li {
+	list-style-type: none;
+	display: inline;
+    text-align: center;
+    margin-left: 11.2%;
+}
+
+@keyframes rotate360 {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+.developers {
+    font-family: 'Nunito Sans', sans-serif;
+    color: rgb(96, 96, 96);
+    position: absolute;
+    font-size: 1vw;
+    top: 90vh;
+    left: 3%;
+}
+
+.dev {
+    color: rgb(180, 180, 180);
+    text-decoration: none;
+}
+
+.ellipse1 {
+    position: absolute;
+    left: 17%;
+    top: 15%;
+    width: 40%;
+    z-index: 2;
+   /* animation: rotate360 20s linear infinite;*/
+}
+
+.ellipse2 {
+    width: 22%;
+    left: 58%;
+    top: 51%;
+    z-index: 4;
+   /* animation: rotate360 20s linear infinite;*/
+}
+
+.mouse {
+    width: 66%;
+    left: 10%;
+    top: 25%;
+    position: absolute;
+    z-index: 3;
+    transition: transform 0.3s ease-out;
+}
+
+
+.text {
+    position: absolute;
+    width: 35%;
+    height: 16vw;
+    left: 3%;
+    top: 55vh;
+    z-index: 5;
+}
+
+.hh1 {
+    font-family: 'Lora', serif;
+    font-weight: 400;
+    color: white;
+    background-image: linear-gradient(90deg, #b7b7b7, white);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: -2vw;
+    font-size: 9.5vw;
+    z-index:5;
+}
+
+.hh2 {
+    font-family: 'Questrial', sans-serif;
+    color: #b7b7b7;
+    font-size: 3.9vw;
+    z-index:5;
+}
+
+.bible {
+    z-index: 1;
+    left: 28.9%;
+    top: 10.8%;
+    width: 36%;
+    height: 90vh;
+    font-size: 0.7vw;
+    text-align: justify;
+    position: absolute;
+    color: gray;
+    font-family: 'Cormorant', serif;
+}
+
+.glass {
+    left: 76.5%;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    backdrop-filter: blur(1vw);
+    background: rgba(255, 255, 255, 0.05);
+    z-index: 6;
+    transition: left 1.5s ease;
+}
+
+.glass1 {
+    left: 100%;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    backdrop-filter: blur(1vw);
+    background: rgba(255, 255, 255, 0.05);
+    z-index: 10;
+    transition: left 1.5s ease;
+}
+
+.blocks-container {
+    column-count: 3;
+    column-gap: -5%;
+    position: relative;
+    width: 70%;
+    height: 90%;
+    margin-top: 12vh;
+    margin-left: 1%;
+    z-index: 8;
+}
+
+.block {
+    break-inside: avoid;
+    background-image: linear-gradient(45deg, #1D1D1D, #3F2F2F);
+    width: 90%;
+    height: 11%;
+    margin-left: 3%;
+    border-radius: 1.5vw;
+    color: white;
+    text-align: center;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 2.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 8;
+    cursor: pointer;
+}
+
+.modalzapis {
+    position: absolute;
+    width: 23.5%;
+    height: 100%;
+    background-image: linear-gradient(45deg, #6E131A, #D6353A);
+    z-index: 11;
+    left: 76.5%;
+    transition: left 0.5s ease-out;
+    overflow: auto;
+}
+
+.line_zapis {
+    width: 82%;
+    height: 0.04vw;
+    left: 9%;
+    background-color: white;
+    position: absolute;
+    top: 9vh;
+}
+
+.date_zapis {
+    text-align: center;
+    font-family: 'Nunito Sans', sans-serif;
+    color: white;
+    font-size: 2.5vw;
+    width: 100%;
+    margin-top: 1.3vh;
+    margin-bottom: 0vw;
+    
+}
+
+.times_container {
+    width: 100%;
+    height: 30vw;
+    margin-top: 1.5vw;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    break-inside: avoid;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.time_zapis {
+    text-align: center;
+    font-family: 'Nunito Sans', sans-serif;
+    color: white;
+    font-size: 1.5vw;
+    width: 40%;
+    height: 3vw;
+    transition: font-size 0.25s ease, width 0.25s ease, height 0.25s ease;
+    background-color: #1D1D1D;
+    border-radius: 5vw;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    break-inside: avoid;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.time_zapis:hover {
+  font-size: 1.8vw;
+  height: 3.2vw;
+  width: 55%;
+}
+
+.time_zapis:not(:first-child) {
+    margin-top: 1vw;
+  }
+
+form[name="zapis"] {
+    margin-top: -0.3vw;
+    margin-left: 5%;
+}
+
+input[name="name"], input[name="email"], input[name="phone"] {
+    border-radius: 3vw;
+    width: 85%;
+    height: 2.5vw;
+    border: none;
+    margin-top: 1.3vw;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1.3vw;
+    color: white;
+    padding-left: 10%;
+    background-color: #1D1D1D;
+}
+
+input[name="name"]{
+    width: 60%;
+}
+
+::placeholder {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1.3vw;
+    color: #a4a4a4;
+    padding-left: 0%;
+}
+
+.buttons {
+    width: 100%;
+    display: flex;
+}
+
+button[name="button_zapis"]{
+    border: none;
+    background-color: #D6353A;
+    text-align: center;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1.3vw;
+    color: white;
+    border-radius: 3vw;
+    margin-top: 3vw;
+    width: 45%;
+    height: 3vw;
+    cursor: pointer;
+}
+
+.cancel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: none;
+    background-color: #1D1D1D;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1.3vw;
+    color: #D6353A;
+    border-radius: 3vw;
+    margin-top: 3vw;
+    margin-left: 5%;
+    width: 45%;
+    height: 3vw;
+}
+
+.block2 {
+  background-image: linear-gradient(45deg, #6E131A, #D6353A);
+}
+
+.block:hover {
+  background-image: linear-gradient(45deg, #6E131A, #D6353A);
+}
+
+.block:not(:first-child) {
+    margin-top: 1vw;
+  }
+
+  .blocks-container1 {
+    column-count: 2;
+    column-gap: 3%;
+    position: relative;
+    width: 45%;
+    height: 90%;
+    margin-top: 11vh;
+    margin-left: 2%;
+}
+
+.block1 {
+    break-inside: avoid;
+    background-image: linear-gradient(45deg, #1D1D1D, #3F2F2F);
+    width: 90%;
+    height: 46%;
+    margin-left: 0%;
+    border-radius: 2vw;
+    color: white;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1.5vw;
+    padding-top: 0.8vw;
+    text-align: center;
+}
+
+.block1:not(:first-child) {
+    margin-top: 1vw;
+  }
+
+
+
+
+
+@keyframes expandFade {
+    from {
+      opacity: 1;
+      transform: scale(1);
+    }
+    to {
+      opacity: 0;
+      transform: scale(2);
+    }
+  }
+
+  .arrow-container {
+    position: absolute;
+    width: 4%;
+    height:4vw;
+    font-size:4.5vw;
+    color: white;
+    top: 26vw;
+    left: 72.5%;
+    cursor: pointer;
+    z-index: 4;
+  }
+
+
+  .arrow-container1 {
+    position: absolute;
+    width: 4%;
+    height:4vw;
+    font-size:4.5vw;
+    color: white;
+    top: 26vw;
+    left: 72%;
+    cursor: pointer;
+    z-index: 7;
+  }
+
+  .circle,
+  .arrow {
+    position: absolute;
+  }
+
+  .circle {
+    border-radius: 50%;
+    border: solid white;
+  }
+
+  .circle:nth-child(1) {
+    animation: expandFade 2s infinite;
+    width: 4vw;
+    border: solid white 0.05vw;
+    height: 4vw;
+    top: -0.5vw;
+    left: -1.1vw;
+  }
+  .circle:nth-child(2) {
+    animation: expandFade 2s infinite;
+    animation-delay: 0s;
+    border: solid white 0.1vw;
+    width: 2.5vw;
+    height: 2.5vw;
+    top: 0.2vw;
+    left: -0.4vw;
+  }
+
+  .arrowpic {
+    position: absolute;
+    top: 1vw;
+    width: 1.5vw;
+    cursor: pointer;
+  }
+
+  .animate {
+    left: 0%;
+  }
+
+  .animate1 {
+    left: 76.5%;
+  }
+
+  .arrowpic1 {
+    position: absolute;
+    width: 2vw;
+    left: 3%;
+    top: 2vw;
+    height: auto;
+    opacity: 0%;
+    transition: opacity 3s ease;
+    display: none;
+    z-index: 11;
+  }
+
+  .arrowpic2 {
+    position: absolute;
+    width: 2vw;
+    left: 3%;
+    top: 2vw;
+    height: auto;
+    opacity: 0%;
+    transition: opacity 3s ease;
+    display: none;
+    z-index: 11;
+  }
+
+  .animate3 {
+    display: block;
+    opacity: 100%;
+    cursor: pointer;
+  }
+
+  .animate4 {
+    left: 100%;
+  }
+
+  .img_uslugi {
+    border-radius: 1.3vw;
+    width: 90%;
+    height: auto;
+    text-align: center;
+  }
+  
+  .name_uslugi {
+    margin-top: 0vw;
+    font-size: 1.8vw;
+    text-align: left;
+    margin-left: 7%;
+  }
+
+  .price_uslugi {
+    
+  }
+
+  .arrowuslugi {
+    top: 52vh;
+    left: 95%;
+  }
+
+  .line_uslugi {
+    width: 95%;
+  }
+
+  .in_dev {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
