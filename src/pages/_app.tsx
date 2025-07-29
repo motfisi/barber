@@ -6,6 +6,7 @@ import theme from '@/lib/MaterialUI';
 import { createEmotionCache } from '@/lib/MaterialUI/createEmotionCache';
 
 import type { AppProps as AppPropsBase } from 'next/app';
+import '../App.scss';
 
 const clientSideEmotionCache = createEmotionCache();
 

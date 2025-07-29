@@ -1,7 +1,6 @@
 import { Box, styled } from '@mui/material';
 
 export const Container = styled(Box)({
-  position: 'relative',
   width: '100%',
-  height: '100vh',
+  height: '100%',
 });
