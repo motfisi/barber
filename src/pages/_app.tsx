@@ -1,11 +1,29 @@
+import { CacheProvider, EmotionCache } from '@emotion/react';
+import { ThemeProvider, CssBaseline } from '@mui/material';
 import { FC } from 'react';
 
-import type { AppProps } from 'next/app';
+import theme from '@/lib/MaterialUI';
+import { createEmotionCache } from '@/lib/MaterialUI/createEmotionCache';
+
+import type { AppProps as AppPropsBase } from 'next/app';
+
+const clientSideEmotionCache = createEmotionCache();
+
+interface AppProps extends AppPropsBase {
+  emotionCache?: EmotionCache;
+}
 
 const App: FC<AppProps> = (props) => {
-  const { Component, pageProps } = props;
+  const { Component, emotionCache = clientSideEmotionCache, pageProps } = props;
 
-  return <Component {...pageProps} />;
+  return (
+    <CacheProvider value={emotionCache}>
+      <ThemeProvider theme={theme}>
+        <CssBaseline />
+        <Component {...pageProps} />
+      </ThemeProvider>
+    </CacheProvider>
+  );
 };
 
 export default App;

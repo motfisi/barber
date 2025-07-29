@@ -110,18 +110,11 @@ export default [
 
     settings: {
       'import/resolver': {
-        alias: {
-          map: [['@', './src']],
-          extensions: ['.ts', '.tsx'],
-        },
-        node: {
-          extensions: ['.js', '.jsx', '.ts', '.tsx'],
-        },
         typescript: {
           project: './tsconfig.json',
         },
-        react: {
-          version: 'detect',
+        node: {
+          extensions: ['.js', '.jsx', '.ts', '.tsx'],
         },
       },
     },
