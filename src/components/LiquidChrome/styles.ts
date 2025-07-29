@@ -5,4 +5,5 @@ export const Container = styled(Box)({
   zIndex: 0,
   width: '100%',
   height: '100%',
+  lineHeight: 0,
 });

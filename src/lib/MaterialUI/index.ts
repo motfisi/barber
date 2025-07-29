@@ -11,6 +11,9 @@ const theme = createTheme({
     secondary: {
       main: '#F5F5F5',
     },
+    background: {
+      default: '#120000',
+    },
   },
   typography: {
     fontFamily: '"Inter", "Roboto", "Helvetica", "Arial", sans-serif',
