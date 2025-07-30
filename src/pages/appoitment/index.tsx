@@ -3,6 +3,7 @@ import { collection, getDocs } from 'firebase/firestore';
 import { FC, useEffect, useState } from 'react';
 
 import Page from '@/components/Page';
+import { withAuth } from '@/hocs/withAuth';
 import { db } from '@/lib/firebase';
 
 interface Slot {
@@ -54,4 +55,4 @@ const Appoitment: FC = () => {
   );
 };
 
-export default Appoitment;
+export default withAuth(Appoitment);
